@@ -1,0 +1,10 @@
+#!/bin/bash
+#Made by khanitech  
+ 
+if [ "$?" -eq 0 ]; then
+    echo "Post install succeeded."
+    exit 0
+else
+    echo "Post install failed."
+    exit 1
+fi
