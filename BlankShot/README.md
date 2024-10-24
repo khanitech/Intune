@@ -19,6 +19,8 @@ The whole project has a standard pkg folder structure, an empty .blankfile, and 
 touch pkgroot/empty/.blankfile
 ```
 
+The Post install script only returns exit codes 0 or 1. And does nothing else. But hey it works, Intune is fooled! So we can use the pre and post install script feature, directly in Intune.
+
 BlankShot can be compiled with the following command.
 ```
 pkgbuild --root pkgroot \                  
