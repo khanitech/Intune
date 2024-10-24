@@ -14,7 +14,10 @@ can be re-used for multiple policies as it does not really install properly or m
 Link to Wiki with guides about how to use BlankShot with Root3 App Catalog and Intune
 https://github.com/khanitech/Intune/wiki
 
-The whole project has a standard pkg folder structure, an empty .blankfile, and postinstall script that returns a exit code when finished. So it is not particularly complicated or large.
+The whole project has a standard pkg folder structure, an empty .blankfile, and postinstall script that returns a exit code when finished. So it is not particularly complicated or large. The empty file can be made with the touch command like this: 
+```
+touch pkgroot/empty/.blankfile
+```
 
 BlankShot can be compiled with the following command.
 ```
